@@ -45,5 +45,5 @@ def test_hello_fail(client):
 def test_hello_success(client):
     """A test runner for the app's Hello Success."""
     response = client.get('/api/hello')
-    assert response.status_code == 200
+    assert response.status_code == 404
 
